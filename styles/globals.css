@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Weather Background */
+.weather-bg {
+  background: linear-gradient(to top, #87ceeb, #e0f7fa);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cloud1 {
+  width: 120px;
+  height: 60px;
+  top: 100px;
+  left: -150px;
+  animation: cloud-move 60s linear infinite;
+}
+
+.cloud1::before {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  left: 10px;
+}
+
+.cloud1::after {
+  width: 60px;
+  height: 60px;
+  top: -10px;
+  left: 60px;
+}
+
+.cloud2 {
+  width: 180px;
+  height: 80px;
+  top: 200px;
+  left: -250px;
+  animation: cloud-move 80s linear infinite;
+}
+
+.cloud2::before {
+  width: 100px;
+  height: 100px;
+  top: -30px;
+  left: 20px;
+}
+
+.cloud2::after {
+  width: 90px;
+  height: 90px;
+  top: -20px;
+  left: 90px;
+}
+
+@keyframes cloud-move {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 110%;
+  }
+}
