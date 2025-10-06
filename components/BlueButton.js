@@ -1,3 +1,6 @@
+// components/BlueButton.js
+import React from "react";
+
 export default function BlueButton() {
   return (
     <button
