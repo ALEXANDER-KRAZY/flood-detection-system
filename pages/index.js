@@ -29,10 +29,9 @@ export default function LoginPage() {
         <h1 className="text-3xl font-bold text-center color-blue-800">
           Flood Detection System Login
         </h1>
-  <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="flex justify-center items-center h-screen bg-gray-100">
       <BlueButton />
     </div>
-
         {error && (
           <div className="bg-red-100 text-red-700 px-4 py-2 rounded-md mb-4 text-sm text-center">
             {error}
